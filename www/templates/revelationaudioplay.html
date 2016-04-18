@@ -1,0 +1,51 @@
+<ion-view hide-nav-bar="true" overflow-scroll="true">
+
+<ion-content class="vm-background-revelationplay vm_bgimgcover" ng-init="Load()"  scroll="true" overflow-scroll="true">
+ <audio id="noise"></audio>
+
+ <div ng-click="goback();"><p class="icon ion-ios-arrow-left vm_iconplaybackrev"></p></div>
+<br/><br/><br/>
+
+<center> <h3 class="vm-text-white">Prayer for a Deep<br/>Understanding of Your<br/>Goodness</h3></center>
+<center class="vm_playerborder">
+       <div class="player">
+       <div class="row">
+        <div class="col"></div>
+        <div class="col col-80"><p class="player__play1 button--large" id="contplayrev" ng-click="myrevcontsong()" ></p>
+        </div>
+        <div class="col"></div>
+       </div>
+       </div>
+    </center>
+    <br/>
+
+     <!--   <div class="row">
+        <div class="col vm-col-offset-13 player__time-elapsed1 vm_playtimecolor">0.00</div>
+        <div id="vm_track1"><div class="vm_progBar"></div></div>
+        <div class="col vm-col-offset-36 player__time-total1 vm_playtimecolor">1.00</div>
+       </div> -->
+
+       <div class="row">
+          <div class="vm-col-offset-13 player__time-elapsed1 vm_playtimecolor" style="word-wrap:normal!important">0.00</div>
+          <div id="vm_track1"><div class="vm_progBar"></div></div>
+          <div class="vm-col-offset-36 player__time-total1 vm_playtimecolor" style="word-wrap:normal!important">1.00</div>
+         </div>
+      
+      <div class="bar bar-footer bar-dark vm-player-footer">
+       <div class="row vm_rowalign">
+        <div class="col"><i class="icon ion-drag vm-iconsize" ng-click="modal.show()"></i><br><i class="vm-footer-text">&nbsp;&nbsp;ReadAlong</i></div>
+<!--         <div class="col"><i class="icon ion-headphone vm-iconsize"></i><br><i class="vm-footer-text">&nbsp;&nbsp;PrayAlong</i></div>
+ -->
+        <div class="col" ><p class="vm-favicontext"  ng-click="myrevcontsong()"><i class="icon ion-headphone vm-iconsizecolor" id="mySongrev" ng-click="headliked=!headliked" ng-class="{'icon ion-headphone vm-iconsize':headliked, 'icon ion-headphone vm-iconsizecolor':!headliked}"></i></p><br/><i class="vm-footer-text">&nbsp;&nbsp;PrayAlong</i></div>
+      <div class="col"> <p class="vm-favicontext" ng-click="ControlAudio()"><i class="icon ion-android-volume-up vm-iconsize" id="myvolrev" ng-click="liked=!liked" ng-class="{'ion-android-volume-off':liked, 'ion-android-volume-up':!liked}"></i></p><br/><i class="vm-footer-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mute</i></div>
+          <div class="col"> <p class="vm-favicontext" ng-click="favclick()"><i class="icon ion-ios-heart-outline vm-iconsize"  id="myrev" ng-click="favclicked=!favclicked" ng-class="{'ion-ios-heart':favclicked, 'ion-ios-heart-outline':!favclicked}"></i></p><br/><i class="vm-footer-text">&nbsp;&nbsp;&nbsp;&nbsp;Favourite</i>
+          </div>
+        <div class="col vm-disableicon"><i class="icon ion-share vm-iconsize"></i><br/><i class="vm-footer-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Share</i></div>
+        <div class="col vm-disableicon"><i class="icon ion-more vm-iconsize"></i><br/><i class="vm-footer-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More</i></div>
+       </div>
+     </div>
+</ion-content>
+</ion-view>
+
+ 
+   

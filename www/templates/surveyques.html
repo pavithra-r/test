@@ -1,0 +1,67 @@
+<ion-view hide-nav-bar="true" overflow-scroll="true">
+  <ion-content class="vm-background-surveyimg vm_bgimgcover" scroll="false" overflow-scroll="true">
+
+  <div class="vm_bgblack" ng-click="goback()">
+  <p class="icon ion-ios-arrow-left vm-iconback"></p>
+  </div>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+<center>
+     <form name="surveyques">
+
+      <h5 class="vm-quescolor">How often do you pray?</h5>
+      <h6 class="vm-quescolor">(Rate On a Scale of 1-5)</h6>
+<br/><br/>
+<!-- <div >
+      <input id="range1"  style="width:70%;" type="range" min="0" max="80" value="0" step="20" list="vol">
+    </div> -->
+
+<div class="range" style="width:85%;">
+  <input type="range" id="range1"  min="0" max="80" step="20" value="0" >
+</div>
+    <br/>
+
+<!--   <datalist id="vol">
+   <option>0</option>
+   <option>20</option>
+   <option>40</option>
+   <option>60</option>
+   <option>80</option>
+  </datalist> -->
+
+  <div class="row vm_numalign">
+  <div class="col-20 vm-quescolorbold">1</div>
+  <div class="col-20 vm-quescolor">2</div>
+  <div class="col-20 vm-quescolorbold">3</div>
+  <div class="col-20 vm-quescolor">4</div>
+  <div class="col-20 vm-quescolorbold">5</div>
+</div>
+
+<div class="row vm-ansalign">
+  <div class="col-20 vm-quescolor">I Don't<br/>Pray</div>
+  <div class="col-20"></div>
+  <div class="col-20 vm-quescolor">I Pray On<br/>Special<br/>Ocassions</div>
+  <div class="col-20"></div>
+  <div class="col-20 vm-quescolor">I Pray<br/>Daily</div>
+</div>
+
+
+<button class="button button-light vm-btn-width" ng-click="Clicksecondques()">
+  Next
+</button>
+
+     </form>
+</center>
+  
+
+
+  </ion-content>
+</ion-view>
+
+
+
+
+
+

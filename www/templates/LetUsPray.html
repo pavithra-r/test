@@ -1,0 +1,89 @@
+<ion-view hide-nav-bar="true" overflow-scroll="true" >
+  <ion-content class="vm-background-aboutusimg"  overflow-scroll="true">
+  <br/>
+  <br/>
+ <center>
+<!--   <button class="button icon ion-navicon vm-navtop" ng-click="modal.show()"></button>
+ -->   
+  <img src="img/topnav.png" class="vm-navtop" ng-click="overlayshow();">
+  </center> 
+  <br/>
+  <center><h2 class="vm_aboutus">LET US PRAY</h2></center>
+ 
+  <hr noshade class="vm-hrtag"/>
+  
+  <center><p>How can we pray for you? <br/> Select a topic below</p></center>
+
+  <hr noshade class="vm-hrtag"/>
+ 
+    <div class="list vm-prayer-inset vm-padding-left">
+	<a class="item item-thumbnail-left vm-border-width-none vm-prayerlist-height">
+      <img src="img/Icon-03.png" class="vm-prayericon-size">
+      <p class="vm-prayer-icon" ng-click="fulfill()">Fulfillment</p>
+    </a>
+	<a class="item item-thumbnail-left vm-border-width-none vm-prayerlist-height">
+      <img src="img/Icon-02.png" class="vm-prayericon-size">
+      <p class="vm-prayer-icon" ng-click="health()">Health</p>
+    </a>
+	<a class="item item-thumbnail-left vm-border-width-none vm-prayerlist-height">
+      <img src="img/Icon-04.png" class="vm-prayericon-size">
+      <p class="vm-prayer-icon" ng-click="general()">General</p>
+    </a>
+	<a class="item item-thumbnail-left vm-border-width-none vm-prayerlist-height">
+      <img src="img/Icon-01.png" class="vm-prayericon-size">
+      <p class="vm-prayer-icon" ng-click="relationship()">Relationships</p>
+    </a>
+ 
+ </div>
+  </ion-content>
+</ion-view>
+
+<ion-view hide-nav-bar="true" overflow-scroll="true" ng-show="show" ng-class="navigationclass">
+<ion-content>
+  <img src="img/menu.jpg" class="vm_navwidth"/>
+  
+  <ion-list class="vm_navliststyle">
+    <ion-item class="vm-list-color vm-item-listitem" ng-click="aboutustwo()">
+          <center>About Us</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" ng-click="PrayerClicked()">
+          <center>Let Us Pray</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" menu-close>
+          <center class="vm_disablecolor">Offer Prayer</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" menu-close>
+          <center class="vm_disablecolor">Request Prayer</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" ng-click="authorprofile()">
+          <center>Author Profile</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" ng-click="userprofile()">
+          <center>User Profile</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" ng-click="Logout()">
+          <center>Log Out</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem">
+       <center ng-click="overlayhide();">
+       <img src="img/bottomnav.png" class="vm-navbottom" ng-show="show">
+       </center>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
+</ion-view>
+
+
+
+
+
+
+

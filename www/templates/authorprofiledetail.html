@@ -1,0 +1,22 @@
+<ion-view hide-nav-bar="true" class="modal" overflow-scroll="true">
+  <ion-content class="vm-background-authorprofileimg" scroll="false" overflow-scroll="true">
+<!--<p class="icon ion-close-round vm-popupclose" ng-click="modal.hide()"></p>-->
+	 <p class="icon ion-close-circled vm-close-popupblack" ng-click="modal.hide()"></p>
+	 <div class="row vm-login-inset">
+	 <div class="col col-33 col-offset-33"><img class="vm-authorimgsize" src="img/Profile-Sharon.jpg"/></div>
+	 </div>
+
+
+ <div class="row vm-login-inset" ng-repeat="x in results">
+	 <div class="col col-33 col-offset-33"> <img src="img/{{x.profile}}.jpg"/></div>
+	 <p>{{x.authorDesc}}</p>
+<!-- <p>{{authorservice.selid}}</p>
+ -->	 </div>
+	<center>
+	<p class="vm-login-inset">
+	  {{x.authordesc}}
+	</p>
+	</center>
+  </ion-content>
+</ion-view>
+

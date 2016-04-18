@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+   <!--  <allow-navigation href="http://*/*" />
+    <meta http-equiv="Content-Security-Policy"/> -->
+   <!--  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"> -->
+
+    <title></title>
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+        <script src="js/ng-cordova.min.js"></script>
+
+
+    <!-- your app's js -->
+	     <script src="js/app.js"></script>
+        <script type="text/javascript">
+          angular.module('Prayer.controllers', []);
+          angular.module('Prayer.services', []);
+        </script>
+        <script src="js/Controllers/LoginController.js"></script>
+      	<script src="js/Controllers/HomeController.js"></script>
+        <script src="js/Controllers/PopupController.js"></script>
+    	  <script src="js/Controllers/PrayerController.js"></script>
+        <script src="js/Controllers/AuthorProfileCtrl.js"></script>
+        <script src="js/Controllers/RevelationController.js"></script>
+        <script src="js/Controllers/PurposeController.js"></script>
+        <script src="js/Controllers/BalanceController.js"></script>
+        <script src="js/Controllers/MarriageController.js"></script>
+        <script src="js/Controllers/LoveController.js"></script>
+        <script src="js/Controllers/HolidayController.js"></script>
+
+        <script src="js/soundmanager2.js"></script>
+
+        <script src="js/services.js"></script>
+    	  <script src="js/Services/LoginService.js"></script>
+        <script src="js/Services/userservice.js"></script>
+        <script src="js/Services/authorservice.js"></script>
+        <script src="js/Services/CustomService.js"></script>
+
+        <script src="js/ionic-toast.js"></script>
+
+
+      <script src="Assets/js/moment.min.js" type="text/javascript"></script>
+      <script src="Assets/js/underscore-min.js" type="text/javascript"></script>
+      <script src="Assets/js/underscore.string.min.js" type="text/javascript"></script>
+
+
+  </head>
+  <body ng-app="Prayer">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view>
+	<div ng-if="myNetwork">
+    <div class="bar bar-footer bar-network">
+      <ion-spinner class="spinner-assertive"></ion-spinner>
+     <div class="title">{{myNetwork}}</div>
+   </div>
+ </div></ion-nav-view>
+  </body>
+</html>
+
+

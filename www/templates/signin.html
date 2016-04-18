@@ -1,0 +1,44 @@
+<ion-view class="modal" overflow-scroll="true">
+  <ion-content class="vm-background-signinimg" scroll="false">
+  <br/><br/><br/><br/><br/><br/><br/>
+<div ng-click="modal.hide()">
+<p class="icon ion-close-circled vm-close-popup"></p>
+</div>
+
+<center>
+<br/><br/><br/>
+</center>
+     <form name="signin">
+       <div class="list list-inset vm-login-inset">
+         <label class="item item-input vm-inputbox">
+           <input type="text" placeholder="Name" name="username">
+         </label>
+        </div>
+		 <div class="list list-inset vm-login-inset">
+         <label class="item item-input vm-inputbox">
+           <input type="email" placeholder="Email Id" name="emailid">
+         </label>
+        </div>
+        <div class="list list-inset vm-login-inset">
+         <label class="item item-input vm-inputbox">
+           <input type="password" placeholder="Password" name="password">
+         </label>
+        </div>
+       <center>
+      <div class="padding">
+        <button class="button vm-button-large headercolor" ng-click="signin()">Sign Up</button>
+      </div>
+      
+       </center>
+      </form>
+    <div class="padding">
+                    <button type="submit" class="button button-block bar-stable vm-footer" ng-click="fbaccess()" nav-clear="">Sign up with Facebook</button>
+                </div>
+  </ion-content>
+</ion-view>
+
+
+
+
+
+

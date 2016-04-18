@@ -1,0 +1,45 @@
+<ion-view overflow-scroll="true" hide-nav-bar="true">
+  <ion-content class="vm-background-userprofileimg vm_bgimgcover">
+     <div class="vm_bgblack" ng-click="goback()">
+     <p class="icon ion-ios-arrow-left vm-iconback"></p>
+     </div>
+     <br/><br/><br/>
+  
+    <center>
+     <img class="vm_galleryimgalign" ng-show="!imgURI" ng-src="http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png" ng-click="choosePhoto()">
+    </center>
+    <center>
+     <img class="vm_galleryimgalign" ng-show="imgURI" ng-src="{{imgURI}}" ng-show="imgURI !== undefined">
+    </center>
+
+     <form name="profile">
+       <div class="list list-inset vm-login-inset">
+         <label class="item item-input vm-inputbox">
+           <input type="text" placeholder="First,Last">
+         </label>
+        </div>
+		    <div class="list list-inset vm-login-inset">
+         <label class="item item-input vm-inputbox">
+           <input type="text" placeholder="Email">
+         </label>
+        </div>
+        <div class="list list-inset vm-login-inset">
+         <label class="item item-input ">
+           <input type="text" placeholder="Favorities" >
+         </label>
+        </div>
+       <center>
+        <div class="padding">
+          <button class="button vm-button-large headercolor" ng-click="submituser()">Submit</button>
+        </div>
+      </center>
+      </form>
+  </ion-content>
+</ion-view>
+
+
+
+
+
+
+  

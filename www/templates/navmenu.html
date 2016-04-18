@@ -1,0 +1,49 @@
+<ion-view hide-nav-bar="true"  overflow-scroll="true" class="modal">
+
+  <ion-content>
+  <img src="img/menu.jpg" class="vm_navwidth"/>
+  <ion-list class="vm_navliststyle">
+
+           <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="modal.hide();">
+           <center>About Us</center>
+           <hr noshade class="vm-hrtaglist"/>
+           </ion-item>
+
+          <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="PrayerClicked()">
+          <center>Let Us Pray</center>
+          <hr noshade class="vm-hrtaglist"/>
+          </ion-item>
+        
+          <ion-item class="vm-list-color vm-item-listitem" menu-close>
+          <center>Offer Prayer</center>
+          <hr noshade class="vm-hrtaglist"/>
+          </ion-item>
+
+          <ion-item class="vm-list-color vm-item-listitem" menu-close>
+          <center>Request Prayer</center>
+          <hr noshade class="vm-hrtaglist"/>
+          </ion-item>
+		
+          <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="authorprofile()">
+          <center>Author Profile</center>
+          <hr noshade class="vm-hrtaglist"/>
+          </ion-item>
+
+		      <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="userprofile()">
+          <center>User Profile</center>
+          <hr noshade class="vm-hrtaglist"/>
+          </ion-item>
+
+		      <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="Logout()">
+          <center>Log Out</center>
+          <hr noshade class="vm-hrtaglist"/>
+          </ion-item>
+
+      </ion-list>
+    </ion-content>
+    
+	    <center>
+      <button menu-close class="button icon ion-navicon vm-menulist" ng-click="modal.hide()"></button>
+     </center>
+
+</ion-view>

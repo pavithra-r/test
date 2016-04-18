@@ -1,0 +1,74 @@
+<ion-view hide-nav-bar="true" overflow-scroll="true" >
+  <ion-content class="vm-background-aboutusimg" scroll="false" overflow-scroll="true">
+    <br/><br/>
+    <center>
+    <img src="img/topnav.png" class="vm-navtop"  ng-click="overlayshow();">
+    </center>
+    <br/>
+    <center><h2 class="vm_aboutus">ABOUT US</h2></center>
+    <br/><br/><br/>
+    <hr noshade class="vm-hrtag"/>
+    <br/>
+    <center><p>Prayer Partner connects <br/>those who love to pray<br/> with those who need prayer,<br/>delivering the power of<br/>prayer to you,where and <br/> when you need it most.</p></center>
+    <br/>
+    <hr noshade class="vm-hrtag"/>
+    <br/>
+   <!--  <center>
+    <p ng-click="ClickNextques()"><u>Now that you know a little about us,<br/>Help us get to know you!</u></p>
+    </center> -->
+  </ion-content>
+</ion-view>
+
+
+
+<ion-view hide-nav-bar="true" overflow-scroll="true" ng-show="show" ng-class="navigationclass">
+ <ion-content>
+
+  <img src="img/menu.jpg" class="vm_navwidth"/>
+
+    <ion-list class="vm_navliststyle">
+    
+    <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="aboutustwo()">
+          <center>About Us</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" ng-click="PrayerClicked()" menu-close >
+        <center>Let Us Pray</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" menu-close>
+          <center class="vm_disablecolor">Offer Prayer</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" menu-close>
+          <center class="vm_disablecolor">Request Prayer</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="authorprofile()">
+          <center>Author Profile</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" ng-click="userprofile()">
+          <center>User Profile</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem" menu-close ng-click="Logout()">
+          <center>Log Out</center>
+          <hr noshade class="vm-hrtaglist"/>
+    </ion-item>
+    <ion-item class="vm-list-color vm-item-listitem">
+       <center ng-click="overlayhide();">
+       <img src="img/bottomnav.png" class="vm-navbottom" ng-show="show">
+       </center>
+    </ion-item>
+  </ion-list>
+
+ </ion-content>
+</ion-view>
+
+
+
+   
+
+
+

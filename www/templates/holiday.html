@@ -1,0 +1,19 @@
+
+<ion-view title="Holiday" hide-back-button="true">
+  <ion-content class="has-header padding">
+    <ion-list>
+        
+		 <div class="list">
+      <a class="item row item-icon-right"  ng-repeat="holiday in holidayJSON">
+		 <div class="col col-20 cal-container">
+                    <div class="date">
+                        <p>{{holiday.dateDate}} <span class="{{holiday.dayClass}}">{{holiday.dateMonth}}</span></p>
+                    </div>
+     </div>
+     <div class="col col-80"><b>{{holiday.Name}}</b></div>
+		 </a>
+		 </div>
+		
+      </ion-list>
+  </ion-content>
+</ion-view>
